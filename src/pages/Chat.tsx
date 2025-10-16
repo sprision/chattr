@@ -178,7 +178,7 @@ const Chat = () => {
                           </div>
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center justify-between gap-2">
-                              <p className="font-semibold truncate">{room.name}</p>
+                              <p className="font-semibold truncate text-white">{room.name}</p>
                               <span className="text-xs text-muted-foreground whitespace-nowrap">{time}</span>
                             </div>
                             <div className="flex items-center justify-between gap-2">
