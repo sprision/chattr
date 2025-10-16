@@ -114,14 +114,14 @@ const Chat = () => {
               <Friends user={user} />
             </div>
           ) : selectedRoom ? (
-            <div className="h-full flex flex-col">
+            <div className="flex-1 min-h-0 flex flex-col">
               <div className="flex items-center gap-2 p-2 border-b border-border bg-background">
                 <Button variant="ghost" size="sm" onClick={() => setSelectedRoom(null)}>
                   <ArrowLeft className="w-4 h-4 mr-1" /> Back
                 </Button>
                 <div className="font-semibold truncate">{selectedRoom?.name}</div>
               </div>
-              <div className="flex-1">
+              <div className="flex-1 min-h-0">
                 <ChatRoom room={selectedRoom} user={user} />
               </div>
             </div>
